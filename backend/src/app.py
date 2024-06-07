@@ -6,7 +6,7 @@ from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
 
 app = Flask(__name__)
-uri = "mongodb+srv://adeng2:Repel100@cluster0.huo8uei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://guest:helloimguest@cluster0.huo8uei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 app.config['MONGO_URI'] = uri
 mongo = PyMongo(app)
 
