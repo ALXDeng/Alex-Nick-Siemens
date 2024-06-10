@@ -29,6 +29,10 @@ def createUser():
     }).inserted_id  # Note how the inserted_id is accessed
     return jsonify({'id': str(id), 'msg': "User Added Successfully"})
 
+@app.route("/hello", methods = ["POST"])
+
+def retHello():
+    return "hello world"
 if __name__ == '__main__':
     app.run(debug = True)
 
